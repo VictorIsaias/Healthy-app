@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthyApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".View.UserViews.CodePasswordView"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.ScreenSelectorView"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.EntrenamientoView"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.EntrenamientoIntroView"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.ControlAlcoholFirstView"
+            android:exported="false" />
+        <activity
+            android:name=".View.DevicesViews.DeviceSensorsView"
+            android:exported="false" />
+        <activity
+            android:name=".View.DevicesViews.DeviceConfigurationView"
+            android:exported="false" />
+        <activity
+            android:name=".View.DevicesViews.UserDevicesView"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.DietFirstView"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.DietThirdView"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.DietSecondView"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserViews.RegistrerView"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.DietIntroView"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainViews.HabitsDashboardView"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.ControlAlcoholSecondView"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserViews.Habitosconfig"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainViews.ConfigurationView"
+            android:exported="false" />
+        <activity
+            android:name=".View.DevicesViews.NewDeviceView"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.ControlAlcoholIntroView"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserViews.ActuContra"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserViews.usuarioconfig"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainViews.introduccion"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.TemperatureSecondView"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserViews.forgotPassView"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.TemperatureIntroView"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserViews.AutenticarUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".View.HabitsViews.TemperatureFirstView"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserViews.LoginView"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainViews.splashView"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

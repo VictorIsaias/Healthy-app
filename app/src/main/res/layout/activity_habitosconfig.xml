@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".View.UserViews.Habitosconfig">
+
+    <FrameLayout
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/listaDispositivos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configuracion de habitos"
+            android:textColor="@color/txt_grey"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+        <ImageButton
+            android:id="@+id/atras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/vector___0"
+
+            android:layout_marginEnd="20dp"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitoreo de entrenamiento"
+        android:textSize="18sp"
+        android:fontFamily="@font/lexend"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginStart="10dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/checkboxDistanceAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Alarma de distancia"/>
+
+        <EditText
+            android:id="@+id/editTextDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend"
+            android:hint="Metros"
+            android:textColor="@color/gris2"
+            android:layout_marginLeft="30dp"
+            android:inputType="number" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor de metros que pasaran para que suene una alarma"
+        android:textSize="13sp"
+        android:fontFamily="@font/lexend"
+        android:textColor="@color/txt_grey"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="13dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginStart="10dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/checkboxHeartRateAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Alarma de Pasos"/>
+
+        <EditText
+            android:id="@+id/editTextHeartRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Pasos"
+            android:fontFamily="@font/lexend"
+            android:textColor="@color/gris2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="50dp"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numero de pasos que pasaran para que suene una alarma"
+        android:textSize="13sp"
+        android:fontFamily="@font/lexend"
+        android:textColor="@color/txt_grey"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="13dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dietas"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lexend"
+
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextCalorieGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:hint="Meta calórica"
+
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/gris2"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meta de calorias diarias que se tomara en cuenta para comparar tus recetas en Ayuda para dietas"
+        android:textSize="14sp"
+        android:fontFamily="@font/lexend"
+        android:textColor="@color/txt_grey"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="13dp"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lexend"
+
+        android:layout_marginStart="20dp"
+
+        android:layout_marginEnd="20dp"
+        android:text="Guardar cambios"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

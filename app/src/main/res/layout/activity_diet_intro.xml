@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".View.HabitsViews.DietIntroView"
+    android:padding="23dp">
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@color/txt_grey"
+        android:fontFamily="@font/lexend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Acerca Del Habito"
+        android:textSize="18sp">
+    </TextView>
+    <TextView
+        android:id="@+id/habit"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lexend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="AYUDA PARA DIETAS"
+        android:textSize="27sp">
+    </TextView>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/habit"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lexend"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:text="@string/text">
+    </TextView>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/text"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paso 1: Meta calorica"
+
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexend"
+            android:textSize="18sp"
+            android:layout_margin="20dp"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asegurate de configurar tu meta calorica, puedes hacerlo en el area de configuracion de habitos"
+                android:textSize="17sp"
+                android:textColor="@color/txt_grey"
+                android:fontFamily="@font/lexend"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paso 2: Pesa el ingrediente"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexend"
+            android:textSize="18sp"
+            android:layout_margin="20dp"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coloca tu ingrediente en la pesa"
+                android:textSize="17sp"
+                android:textColor="@color/txt_grey"
+                android:fontFamily="@font/lexend"
+                android:layout_marginStart="23dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/scale"
+                android:layout_gravity="end"/>
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paso 3: Selecciona tu ingrediente"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexend"
+            android:textSize="18sp"
+            android:layout_margin="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dale al boton de agregar ingrediente para buscar uno e ingresarlo en la lista"
+            android:textSize="17sp"
+            android:fontFamily="@font/lexend"
+            android:textColor="@color/txt_grey"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paso 4: Observa tu dieta"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexend"
+            android:textSize="18sp"
+            android:layout_margin="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Al terminar tu lista dale al boton de terminar para ver todos los atributos de tu dieta"
+            android:textSize="17sp"
+            android:textColor="@color/txt_grey"
+            android:fontFamily="@font/lexend"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lexend"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1"
+        android:layout_marginTop="20dp"
+        android:text="Continuar"
+        android:textSize="20dp"
+        android:backgroundTint="@color/boton_verde">
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

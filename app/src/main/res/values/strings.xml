@@ -1,0 +1,69 @@
+<resources>
+    <string name="recordatorioEntrenamiento">Puedes modificar tus metas de distancia y/o pasos diarios en el apartado de configuración</string>
+
+    <string name="entrenamiento">Usa nuestra herramienta para tener un control de tu entrenamiento. Dentro de esta
+         podras saber pasos dados en tiempo real y la distancia recorrida, asi como proponerte metas de caminatas mas facilmente.
+    </string>
+
+    <string name="text">Usa nuestras herramientas para saber cuantas calorias y otros nutrientes tienen tus dietas.</string>
+
+    <string name="termo">Usa nuestra herramienta de termometro para poder medir tu temperatura en tiempo real.
+    Para usarla coloca el termometro debajo de tu brazo y mantenlo ahi unos segundos despues revisa tu temperatura en pantalla.</string>
+
+    <string name="sol">Usa esta herramienta para activar los recordatorios y control para el uso de bloqueador solar
+        en caso de estar demasiado tiempo expuesto a los rayos del son.
+        Nota: no salgas de casa sin bloqueador solar :D
+    </string>
+
+    <string name="alcohol">Usa esta herramienta para revisar el numero de particulas de alcohol de tu aliento y poder controlar el consumo
+        de alcohol excesivo fijando objetivos para evitar altos niveles en tu organismo.
+    </string>
+    <string name="app_name">HEALTHY</string>
+    <string name="titulo">Temperatura</string>
+    <string name="subtitulo">Alerta de Temperatura Alta</string>
+    <string name="subtitulo2">Temperatura alta</string>
+    <string name="texto">Acudir al medico si los sintomas persisten</string>
+    <string name="boton">Volver a medir</string>
+    <string name="config">config</string>
+    <string name="numero1">0</string>
+    <string name="porcentaje">%</string>
+    <string name="icono">icono</string>
+    <string name="titulo2">Medir Temperatura</string>
+    <string name="recuerda">Recuerda</string>
+    <string name="texto2">La pulsera debe llevarse puesta para que el
+seguimiento sea preciso.</string>
+    <string name="texto3">
+Recuerda acudir con un profesional en caso de cualquier preocupacion o problema relacionado a la salud.
+Utiliza tu nuevo omnitrix como una herramienta para tu camino para mejorar.
+</string>
+    <string name="textoperfil">Actualizar Perfil</string>
+    <string name="textodisp">Configuración de Dispositivo</string>
+    <string name="cerrarsesion">Cerrar Sesión</string>
+    <string name="textohabi">Configuracion de Habitos</string>
+    <string name="editar">Editar perfil</string>
+    <string name="cambiarcontra">Editar Contraseña</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Apellido">Apellido</string>
+    <string name="email">Correo Electronico</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="contra">Contraseña Anterior</string>
+    <string name="contra1">Constraseña Nueva</string>
+    <string name="dispo">Dispositivos</string>
+    <string name="aggdispo">Agregar Dispositivo</string>
+    <string name="pesa">Pesa</string>
+    <string name="brazalete">Brazalete</string>
+    <string name="disp">Dispositivo</string>
+    <string name="sensor1">sensor</string>
+    <string name="sensor2">sensor2</string>
+    <string name="sensor3">sensor3</string>
+    <string name="sensor4">sensor4</string>
+    <string name="sensor5">sensor5</string>
+    <string name="sensor6">sensor6</string>
+    <string name="activar">activar</string>
+    <string name="desactivar">desactivar</string>
+    <string name="habit1">Configuracion Habitos</string>
+    <string name="habiten">Configuracion Entrenamiento</string>
+    <string name="habitD">Configuracion Dietas</string>
+
+
+</resources>

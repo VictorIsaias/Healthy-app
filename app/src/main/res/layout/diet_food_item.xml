@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_marginBottom="10dp"
+    android:padding="12dp"
+    android:background="@drawable/borde">
+        <ImageView
+            android:id="@+id/imagen"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+                android:src="@drawable/baseline_question_mark_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/nombre"
+                />
+        <TextView
+
+            app:layout_constraintHorizontal_weight="3"
+            android:id="@+id/nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Arroz"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexend"
+            app:layout_constraintStart_toEndOf="@id/imagen"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/eliminar"
+            app:layout_constraintHorizontal_bias="0"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/txtPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintHorizontal_bias="0"
+            android:text="Peso"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexend"
+            app:layout_constraintEnd_toStartOf="@id/txtProteina"
+            app:layout_constraintBottom_toTopOf="@id/peso"
+            app:layout_constraintStart_toEndOf="@id/imagen"
+            app:layout_constraintTop_toBottomOf="@id/nombre"
+            android:textSize="11sp"/>
+        <TextView
+            android:id="@+id/txtProteina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grasas"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginStart="15dp"
+            app:layout_constraintEnd_toStartOf="@id/txtCalorias"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexend"
+
+            app:layout_constraintBottom_toTopOf="@id/proteina"
+            app:layout_constraintStart_toEndOf="@id/txtPeso"
+            app:layout_constraintTop_toBottomOf="@id/nombre"
+            android:textSize="11sp"/>
+        <TextView
+            android:id="@+id/txtCalorias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Energia"
+            android:layout_marginStart="15dp"
+            app:layout_constraintHorizontal_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexend"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintEnd_toStartOf="@id/txtSodio"
+
+            app:layout_constraintBottom_toTopOf="@id/calorias"
+            app:layout_constraintStart_toEndOf="@id/txtProteina"
+            app:layout_constraintTop_toBottomOf="@id/nombre"
+            android:textSize="11sp"/>
+        <TextView
+            android:id="@+id/txtSodio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proteina"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintHorizontal_bias="0"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexend"
+            android:layout_marginStart="15dp"
+            app:layout_constraintEnd_toStartOf="@id/eliminar"
+
+            app:layout_constraintBottom_toTopOf="@id/sodio"
+            app:layout_constraintStart_toEndOf="@id/txtCalorias"
+            app:layout_constraintTop_toBottomOf="@id/nombre"
+            android:textSize="11sp"/>
+
+
+        <TextView
+            android:id="@+id/peso"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="200 g"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txtPeso"
+            app:layout_constraintEnd_toStartOf="@id/proteina"
+
+            app:layout_constraintTop_toBottomOf="@id/txtPeso"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/proteina"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="46.3 g pt."
+
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txtProteina"
+            app:layout_constraintEnd_toStartOf="@id/calorias"
+            app:layout_constraintTop_toBottomOf="@id/txtProteina"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/calorias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0 g crb."
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txtCalorias"
+            app:layout_constraintEnd_toStartOf="@id/sodio"
+            app:layout_constraintTop_toBottomOf="@id/txtCalorias"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/sodio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 mg sd."
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txtSodio"
+            app:layout_constraintEnd_toStartOf="@id/eliminar"
+            app:layout_constraintTop_toBottomOf="@id/txtSodio"
+            android:textSize="12sp"/>
+        <ImageButton
+            android:id="@+id/eliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/nombre"
+            app:layout_constraintHorizontal_bias="1"
+            android:src="@drawable/remove"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
